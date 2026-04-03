@@ -5,13 +5,10 @@ def bubble_sort(array)
   loop do
     switch = false
 
-    # Iterate over each element and its index
     array.each_with_index do |v, i|
-      # Only perform the comparison if there is a next element
       break if i == array_length - 1
 
       if v > array[i + 1]
-        # Swap the elements
         array[i], array[i + 1] = array[i + 1], array[i]
         switch = true
       end
